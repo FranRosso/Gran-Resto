@@ -208,6 +208,7 @@ span {
 	grid-row-gap: 10px;
 	}
 
+
 .recomendados > * {
 	border-radius: 15px;
 }
@@ -219,7 +220,7 @@ span {
 	grid-area: estreno;
 	background-image: url(../multimedia/gentequeno.jpg);}
 .recomendados__1:hover {
-	transform: scale(1.05);
+	transform: scale(1.01);
 	text-decoration: none;}
 
 .recomendados__1 p {
@@ -258,7 +259,7 @@ span {
 	line-height: 70px;
 	background-image:linear-gradient(to right,black, transparent)}
 .recomendados__2:hover {
-	transform: scale(1.05);
+	transform: scale(1.02);
 	text-decoration: none;}
 
 .recomendados__3{grid-area: veggie;
@@ -278,7 +279,7 @@ span {
 	background-image:linear-gradient(to right,black, transparent)}
 
 .recomendados__3:hover {
-	transform: scale(1.05);
+	transform: scale(1.02);
 	text-decoration: none;}
 
 
@@ -541,6 +542,10 @@ form button {
 }
 .lugar {
 	position:relative;
+
+	p {
+		width:70%;
+	}
 }
 
 .seguir {
@@ -657,6 +662,7 @@ form button {
 	flex-wrap:wrap;
 	justify-content:flex-start;
 
+
 	a {
 		text-decoration:none;
 		color:white;
@@ -666,7 +672,7 @@ form button {
 		color:white;
 	}
 	article {
-		width:32%;
+		width:32.3%;
 		background-color:black;
 		border:$border;
 		border-radius:10px;
@@ -901,6 +907,12 @@ footer {
 		padding-left:5%;
 	}
 
+	.lugar {
+		p {
+			width:100%;
+			font-size:13px;
+		}
+	}
 	.precios {
 		grid-area:precios;
 		border-left:3px solid $color;

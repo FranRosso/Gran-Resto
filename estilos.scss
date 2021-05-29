@@ -25,6 +25,7 @@ body {
 	background-color:black;
 	margin-left:20px;
 	padding:15px !important;
+	transition: transform .2s ease-in-out;
 }
 .menu__4 a:hover {
 	background-color:#23211d !important;
@@ -107,6 +108,7 @@ header {
 		padding-top:5px;
 		padding-bottom:5px;
 		border-radius:15px;
+		transition: transform .2s ease-in-out;
 	}
 }
 
@@ -689,6 +691,7 @@ form button {
 	a {
 		text-decoration:none;
 		color:white;
+
 	}
 	
 	a:hover {
@@ -703,6 +706,7 @@ form button {
 		padding-left:2%;
 		color:white;
 		margin:0.5%;
+		transition: transform .2s ease-in-out;
 	}
 
 	strong {

@@ -14,7 +14,8 @@ body {
 .menu__4 a {
   background-color: black;
   margin-left: 20px;
-  padding: 15px !important; }
+  padding: 15px !important;
+  transition: transform .2s ease-in-out; }
 
 .menu__4 a:hover {
   background-color: #23211d !important;
@@ -79,7 +80,8 @@ header {
     padding: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 15px; }
+    border-radius: 15px;
+    transition: transform .2s ease-in-out; }
 
 h1 {
   background-color: black;
@@ -594,7 +596,8 @@ form button {
     padding: 10px;
     padding-left: 2%;
     color: white;
-    margin: 0.5%; }
+    margin: 0.5%;
+    transition: transform .2s ease-in-out; }
   .promos strong {
     color: #d9910b;
     font-size: 20px; }

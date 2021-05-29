@@ -10,7 +10,7 @@ $border: 3px solid $color;
 
 
 body {
-	family-font:Roboto;
+	font-family:Roboto;
 	background-color:$color2 !important;
 }
 
@@ -155,7 +155,7 @@ span {
 
 
 .card__articulo {
-	width:24%;
+	width:23.75%;
 	border:3px solid $color;
 	background-color:black;
 	padding:15px;
@@ -163,6 +163,7 @@ span {
 	margin-top:10px;
 	border-radius:15px;
 	position:relative;
+	transition: transform .2s ease-in-out;
 
 	a {
 		color:$color;
@@ -218,7 +219,9 @@ span {
 }
 .recomendados__1{
 	grid-area: estreno;
-	background-image: url(../multimedia/gentequeno.jpg);}
+	background-image: url(../multimedia/gentequeno.jpg);
+	transition: transform .2s ease-in-out;
+}
 .recomendados__1:hover {
 	transform: scale(1.01);
 	text-decoration: none;}
@@ -248,7 +251,9 @@ span {
 	background-size: 110%;
 	display:flex; 
 	justify-content: center;
-	align-items: center;}
+	align-items: center;
+	transition: transform .2s ease-in-out;
+}
 
 .recomendados__2 p {
 	font-size: 70px;
@@ -267,7 +272,9 @@ span {
 	background-size: 100%;
 	display:flex; 
 	justify-content: center;
-	align-items: center}
+	align-items: center;
+	transition: transform .2s ease-in-out;
+}
 
 .recomendados__3 p {
 	font-size: 70px;
@@ -317,6 +324,10 @@ form  label{
 }
 
 @media (max-width:767px){
+
+	.recomendados__1:hover {
+		transform: scale(1.02) !important;
+	}
 	.recomendados__2{
 		display:inline-block;
 	}
@@ -424,15 +435,27 @@ form  label{
 	text-align:center;
 	color:white;
 }
-.datos__usuario input {
+.datos__usuario {
+	input {
 	display:block;
 	width:50%;
-	margin-top:10px;
+	margin-top:5px;
 	border-radius:5px;
 	padding-left:10px;
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
+	border:none;
+	}
+}
+
+.datos__usuario label, .city, .amb {
+		text-align:center !important;
+		color:$color;
+		margin-top:10px;
+		margin-bottom:5px;
+		font-weight:400;
+		font-size:17px;
 }
 .usuario	h3 {
 		margin-top:10px;
@@ -773,7 +796,7 @@ footer {
 		display:none;
 	}
 	.card__articulo {
-		width:32%;
+		width:31.7%;
 	}
 	.categorias {
 		h3 {
@@ -877,6 +900,7 @@ footer {
 		font-size:80% !important;
 	}
 	}
+
 
 	.categorias input {
 	margin-right:5%;
@@ -1008,7 +1032,7 @@ footer {
 
 
 
-@media (max-width:530px){
+@media (max-width:548px){
 	.card__articulo {
 		width:100%;
 		margin-left:0px;
